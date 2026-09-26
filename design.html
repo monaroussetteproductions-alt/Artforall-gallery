@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressions Textiles - Mona Roussette</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            background-color: #ffffff;
+            color: #111111;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            line-height: 1.6;
+        }
+        header { margin-top: 50px; }
+        header h1 { font-size: 1.1rem; font-weight: 300; letter-spacing: 5px; text-transform: uppercase; margin: 0; }
+        nav { margin: 40px 0 60px 0; }
+        nav a { text-decoration: none; color: #444444; margin: 0 15px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; }
+        
+        .page-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.2rem;
+            font-style: italic;
+            font-weight: 300;
+            margin: 60px 0 20px 0;
+        }
+        .page-subtitle { font-size: 0.85rem; color: #d4af37; letter-spacing: 2px; margin-bottom: 60px; text-transform: uppercase; font-weight: 400; }
+
+        /* Grille d'exposition des foulards et carrés de soie */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px 80px 20px;
+        }
+        .art-card { box-sizing: border-box; text-align: left; }
+        
+        /* Présentation des tissus en format carré parfait */
+        .image-bg { 
+            background-color: #fafafa; 
+            padding: 10px; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            aspect-ratio: 1 / 1; /* Format carré parfait pour les foulards */
+            overflow: hidden;
+        }
+        .art-card img { width: 100%; height: 100%; object-fit: cover; }
+        
+        .art-title { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 400; margin: 15px 0 5px 0; }
+        .art-details { font-size: 0.8rem; color: #666666; margin: 0 0 10px 0; }
+        
+        /* Mention Édition Limitée en rouge bordeaux ou noir élégant */
+        .art-status { 
+            font-size: 0.75rem; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            color: #8a1538; 
+            font-weight: 400; 
+        }
+
+        footer { margin: 100px 0 40px 0; font-size: 0.75rem; letter-spacing: 1px; color: #999999; }
+        footer a { color: #999999; text-decoration: none; margin: 0 10px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mona Roussette</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="biographie.html">Biographie</a>
+        <a href="#">L'imprimeur</a>
+        <a href="#">Vente / Commander</a>
+    </nav>
+
+    <div class="page-title">Impressions d'Exception</div>
+    <div class="page-subtitle">Éditions d'art limitées à 5 exemplaires numérotés</div>
+
+    <div class="grid-container">
+        <!-- Modèle Textile 1 -->
+        <div class="art-card">
+            <div class="image-bg"><img src="https://unsplash.com" alt="Carré de soie 1"></div>
+            <div class="art-title">Le Carré de Soie N°1</div>
+            <div class="art-details">100% Soie Naturelle — 90 x 90 cm</div>
+            <div class="art-status">✨ Édition limitée — 1 / 5 exemplaires numérotés</div>
+        </div>
+
+        <!-- Modèle Textile 2 -->
+        <div class="art-card">
+            <div class="image-bg"><img src="https://unsplash.com" alt="Foulard modal 2"></div>
+            <div class="art-title">L'Étole en Coton & Modal</div>
+            <div class="art-details">Mélange fluide Premium — 140 x 140 cm</div>
+            <div class="art-status">✨ Édition limitée — 1 / 5 exemplaires numérotés</div>
+        </div>
+
+        <!-- Les 8 autres carrés suivront la même structure -->
+    </div>
+
+    <footer>
+        <a href="#">Contact</a> | <a href="#">Mentions Légales</a>
+    </footer>
+
+</body>
+</html>
