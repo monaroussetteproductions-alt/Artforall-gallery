@@ -1,105 +1,183 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biographie - Mona Roussette</title>
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
-    
+    <title>Mona Roussette — Biographie</title>
+
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 300;
-            background-color: #ffffff;
-            color: #111111;
             margin: 0;
-            padding: 0;
-            text-align: center;
+            background: #ffffff;
+            color: #111111;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 300;
             line-height: 1.8;
         }
+
         header {
-            margin-top: 50px;
+            text-align: center;
+            padding-top: 50px;
         }
+
         header h1 {
-            font-size: 1.1rem;
-            font-weight: 300;
+            margin: 0;
+            font-size: 18px;
+            font-weight: 400;
             letter-spacing: 5px;
             text-transform: uppercase;
-            margin: 0;
         }
+
         nav {
-            margin: 40px 0 60px 0;
+            text-align: center;
+            margin: 40px 20px 80px;
         }
+
         nav a {
+            color: #333333;
             text-decoration: none;
-            color: #444444;
-            margin: 0 15px;
-            font-size: 0.8rem;
-            text-transform: uppercase;
+            margin: 0 14px;
+            font-size: 12px;
             letter-spacing: 2px;
+            text-transform: uppercase;
         }
-        .bio-container {
-            max-width: 700px;
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 800px;
             margin: 0 auto;
-            padding: 0 20px 80px 20px;
-            text-align: left;
+            padding: 0 30px 100px;
         }
-        .bio-title {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 2.2rem;
+
+        h2 {
+            text-align: center;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 36px;
             font-style: italic;
             font-weight: 300;
-            letter-spacing: 1px;
-            margin: 40px 0;
+            margin: 0 0 60px;
+        }
+
+        .intro {
             text-align: center;
-            color: #000000;
+            font-size: 18px;
+            margin-bottom: 55px;
         }
-        .bio-text {
-            font-size: 0.95rem;
-            color: #333333;
-            margin-bottom: 25px;
+
+        p {
+            font-size: 15px;
+            color: #444444;
+            margin-bottom: 28px;
         }
+
+        .signature {
+            text-align: center;
+            margin-top: 70px;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 24px;
+            font-style: italic;
+        }
+
         footer {
-            margin: 100px 0 40px 0;
-            font-size: 0.75rem;
-            letter-spacing: 1px;
-            color: #999999;
             text-align: center;
+            padding: 40px 20px;
+            color: #999999;
+            font-size: 11px;
+            letter-spacing: 1px;
         }
+
         footer a {
             color: #999999;
             text-decoration: none;
-            margin: 0 10px;
+        }
+
+        @media (max-width: 750px) {
+            header {
+                padding-top: 35px;
+            }
+
+            nav {
+                margin: 30px 15px 60px;
+                line-height: 2.8;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            main {
+                padding: 0 22px 70px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
         }
     </style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Mona Roussette</h1>
-    </header>
+<header>
+    <h1>Mona Roussette</h1>
+</header>
 
-    <nav>
-        <a href="index.html">Accueil</a>
-        <a href="biographie.html">Biographie</a>
-        <a href="#">L'imprimeur</a>
-        <a href="#">Vente / Commander</a>
-    </nav>
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="biographie.html">Biographie</a>
+    <a href="oeuvres.html">Œuvres</a>
+    <a href="design.html">Design</a>
+    <a href="contact.html">Contact</a>
+</nav>
 
-    <div class="bio-container">
-        <h2 class="bio-title">Biographie de l'Artiste</h2>
-        
-        <!-- Vous pourrez modifier ces textes plus tard avec votre histoire réelle -->
-        <p class="bio-text">Artiste peintre et auteur passionnée, Mona Roussette explore les émotions à travers une création visuelle unique. Son travail artistique se distingue par une recherche constante de l'harmonie, de la couleur et de la texture sauvage de la matière brute.</p>
-        
-        <p class="bio-text">À travers son projet « Art for All », elle bouscule les codes de la galerie traditionnelle. Son objectif est de rendre l'art accessible, en proposant ses œuvres originales en édition très limitée, mais également en déclinant ses créations picturales sur des textiles d'exception comme la soie, le coton et le modal.</p>
+<main>
+
+    <h2>Artiste, auteur & designer</h2>
+
+    <p class="intro">
+        Mona Roussette développe depuis plus de trente ans une œuvre
+        artistique où peinture, création, écriture et design dialoguent.
+    </p>
+
+    <p>
+        Artiste peintre, auteur et designer, Mona Roussette crée des œuvres
+        originales sur différents supports et développe également des
+        créations textiles inspirées de son univers artistique.
+    </p>
+
+    <p>
+        Son travail explore notamment les notions de transformation,
+        d'intériorité, de relation à soi et aux autres, ainsi que la place
+        de l'art dans la vie quotidienne.
+    </p>
+
+    <p>
+        Son parcours artistique s'est construit entre plusieurs cultures
+        et plusieurs formes d'expression, avec une volonté constante de
+        rendre l'art accessible et vivant.
+    </p>
+
+    <p>
+        Aujourd'hui, elle poursuit cette démarche à travers ses œuvres
+        originales, ses créations textiles et ses projets artistiques.
+    </p>
+
+    <div class="signature">
+        Mona Roussette
     </div>
 
-    <footer>
-        <a href="#">Contact</a> | <a href="#">Mentions Légales</a>
-    </footer>
+</main>
+
+<footer>
+    <a href="index.html">Retour à l'accueil</a>
+</footer>
 
 </body>
 </html>
